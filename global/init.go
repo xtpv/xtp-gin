@@ -1,14 +1,20 @@
 package global
 
-func InitResource() error {
-	err := initConfig()
+func InitResource() (err error) {
+	err = initConfig()
 	if err != nil {
-		return err
+		return
 	}
 
 	err = initDB()
 	if err != nil {
-		return err
+		return
 	}
-	return nil
+
+	err = initLogger()
+	if err != nil {
+		return
+	}
+
+	return
 }

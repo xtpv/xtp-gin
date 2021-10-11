@@ -1,7 +1,7 @@
 package global
 
 import (
-	"github.com/xtp2217866847/xtp-gin/pkg/logger"
+	"github.com/xtpv/xtp-gin/pkg/logger"
 	"gopkg.in/natefinch/lumberjack.v2"
 	"log"
 )

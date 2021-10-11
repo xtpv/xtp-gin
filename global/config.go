@@ -1,7 +1,7 @@
 package global
 
 import (
-	"github.com/xtp2217866847/xtp-gin/pkg/setting"
+	"github.com/xtpv/xtp-gin/pkg/setting"
 	"time"
 )
 

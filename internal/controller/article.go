@@ -2,8 +2,8 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/xtp2217866847/xtp-gin/pkg/app"
-	"github.com/xtp2217866847/xtp-gin/pkg/ecode"
+	"github.com/xtpv/xtp-gin/pkg/app"
+	"github.com/xtpv/xtp-gin/pkg/ecode"
 )
 
 type Article struct{}

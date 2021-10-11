@@ -1,9 +1,10 @@
 package main
 
 import (
+	"context"
 	"github.com/gin-gonic/gin"
-	G "github.com/xtp2217866847/xtp-gin/global"
-	"github.com/xtp2217866847/xtp-gin/internal/routers"
+	G "github.com/xtpv/xtp-gin/global"
+	"github.com/xtpv/xtp-gin/internal/routers"
 	"log"
 	"net/http"
 )
@@ -15,7 +16,13 @@ func init() {
 	}
 }
 
+// @title 博客系统
+// @version 1.0
+// @description Go 语言编程之旅：一起用 Go 做项目
+// @termsOfService https://github.com/xtpv/xtp-gin
 func main() {
+	// 开启异步任务
+	G.StartEvent(context.Background())
 	err := HttpStart()
 	if err != nil {
 		log.Panic(err)

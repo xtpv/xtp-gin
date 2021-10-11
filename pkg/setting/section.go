@@ -15,6 +15,7 @@ type AppConfig struct {
 	LogSavePath     string
 	LogFileName     string
 	LogFileExt      string
+	UploadSavePath  string
 }
 
 type DatabaseConfig struct {
